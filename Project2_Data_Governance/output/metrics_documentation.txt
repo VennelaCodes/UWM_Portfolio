@@ -1,0 +1,31 @@
+======================================================================
+  NEW PERFORMANCE METRICS - DOCUMENTATION
+  Created: 2026-03-05
+======================================================================
+
+METRIC: Operational Efficiency Index (OEI)
+  Range: 0-100
+  Formula: Composite score combining closure rate (40%), turnaround performance (40%),
+   and escalation rate (20%), with rework penalty applied.
+  Interpretation: Higher is better. Target: >= 60
+
+METRIC: Client Experience Score (CES)
+  Range: 0-100
+  Formula: Weighted blend of CSAT (50%), NPS (30%), with complaint rate penalty.
+  Interpretation: Higher is better. Target: >= 70
+
+METRIC: Capacity Utilization Rate
+  Range: 0-100%
+  Formula: Ratio of applications reviewed to applications received.
+  Interpretation: Higher is better. Target: >= 85%
+
+METRIC: Process Health Score
+  Range: 0-100
+  Formula: Inverse measure of rework frequency and system downtime.
+  Interpretation: Higher is better. Target: >= 75
+
+METRIC: Team Productivity Index
+  Range: ratio
+  Formula: Loans processed per 100 client calls handled.
+  Interpretation: Higher indicates more efficient client interactions.
+

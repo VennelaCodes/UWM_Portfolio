@@ -1,0 +1,9 @@
+kpi_name,target_value,unit,frequency,direction
+Average Processing Days,30,days,Monthly,lower_is_better
+Closure Rate,45,percent,Monthly,higher_is_better
+Client Satisfaction Score,4.0,score_1_to_5,Monthly,higher_is_better
+Escalation Rate,10,percent,Weekly,lower_is_better
+Denial Rate,12,percent,Monthly,lower_is_better
+Approval to Close Ratio,75,percent,Monthly,higher_is_better
+Records Processed per Processor,100,count,Monthly,higher_is_better
+Data Quality Score,95,percent,Weekly,higher_is_better

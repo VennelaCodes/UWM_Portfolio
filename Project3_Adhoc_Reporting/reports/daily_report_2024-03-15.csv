@@ -1,0 +1,7 @@
+Business Unit,Pipeline,Completed,Completion %,Cycle Time (days),Errors,Staff,Overtime Hrs
+Underwriting,83,58,69.9,20.1,0,27,4.8
+Closing,176,45,25.6,32.5,0,37,13.8
+Client Services,155,73,47.1,22.7,0,19,17.7
+Compliance,287,77,26.8,10.7,3,50,14.4
+Operations,109,61,56.0,16.0,6,33,3.5
+TOTAL,810,314,38.8,,9,166,54.2

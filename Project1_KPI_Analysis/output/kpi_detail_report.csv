@@ -1,0 +1,29 @@
+SECTION: Overall KPI Performance
+KPI,Target,Actual,Gap,Status
+Average Processing Days,30.0,30.1,-0.1,ABOVE TARGET
+Closure Rate,45.0,45.2,0.2,ON TRACK
+Client Satisfaction Score,4.0,3.0,-1.0,BELOW TARGET
+Escalation Rate,10.0,15.2,-5.2,ABOVE TARGET
+Denial Rate,12.0,10.0,2.0,ON TRACK
+Approval to Close Ratio,75.0,74.7,-0.3,BELOW TARGET
+
+SECTION: KPIs by Region
+Region,Total Records,Closure Rate %,Avg Processing Days,Escalation Rate %
+Midwest,10394,45.4,30.0,14.9
+Northeast,10356,44.8,30.1,15.2
+Southeast,10341,44.9,30.2,16.2
+Southwest,10513,45.2,29.9,15.1
+West,10396,45.4,30.5,14.9
+
+SECTION: KPIs by Team
+Team,Total Records,Closure Rate %,Avg Processing Days,Escalation Rate %
+Team_A,5225,44.5,29.9,15.5
+Team_B,5272,44.9,30.3,15.3
+Team_C,5199,44.5,30.2,15.3
+Team_D,5201,45.6,30.2,13.7
+Team_E,5090,45.5,30.4,16.4
+Team_F,5140,46.9,30.3,15.4
+Team_G,5204,44.4,30.0,15.1
+Team_H,5197,45.2,30.2,15.3
+Team_I,5224,43.3,29.8,15.2
+Team_J,5248,46.8,30.1,15.2

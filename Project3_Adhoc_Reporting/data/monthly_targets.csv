@@ -1,0 +1,61 @@
+month,business_unit,target_completion_rate,target_cycle_time,target_error_rate,target_escalation_rate
+2024-01,Underwriting,84,21.2,4.3,9.2
+2024-01,Closing,95,12.4,4.7,4.7
+2024-01,Client Services,88,12.5,2.3,7.8
+2024-01,Compliance,85,20.9,1.3,8.5
+2024-01,Operations,87,19.1,4.1,3.6
+2024-02,Underwriting,85,18.9,3.8,5.9
+2024-02,Closing,81,19.4,3.7,5.5
+2024-02,Client Services,95,12.1,3.9,5.9
+2024-02,Compliance,84,13.4,1.2,8.9
+2024-02,Operations,93,16.9,2.0,5.8
+2024-03,Underwriting,83,18.3,4.7,4.0
+2024-03,Closing,94,16.0,4.0,6.6
+2024-03,Client Services,89,13.8,3.3,8.9
+2024-03,Compliance,94,16.3,4.2,7.6
+2024-03,Operations,80,16.8,1.8,8.3
+2024-04,Underwriting,94,14.0,1.4,5.2
+2024-04,Closing,93,12.4,4.7,5.1
+2024-04,Client Services,89,17.8,2.7,9.5
+2024-04,Compliance,82,15.6,4.0,4.0
+2024-04,Operations,90,22.0,4.2,6.9
+2024-05,Underwriting,90,16.4,4.5,8.1
+2024-05,Closing,92,20.2,3.7,8.3
+2024-05,Client Services,87,20.4,4.5,5.8
+2024-05,Compliance,89,15.1,4.4,8.5
+2024-05,Operations,80,20.1,3.6,5.9
+2024-06,Underwriting,86,16.2,4.5,4.1
+2024-06,Closing,93,14.8,4.9,4.8
+2024-06,Client Services,92,13.8,2.7,9.7
+2024-06,Compliance,95,14.1,1.4,9.2
+2024-06,Operations,90,21.3,3.1,4.4
+2024-07,Underwriting,83,14.0,2.4,6.4
+2024-07,Closing,88,17.6,1.7,3.8
+2024-07,Client Services,92,12.6,4.7,5.9
+2024-07,Compliance,94,18.9,1.6,6.5
+2024-07,Operations,85,12.4,3.5,9.8
+2024-08,Underwriting,95,19.6,4.3,5.1
+2024-08,Closing,80,21.8,1.1,3.2
+2024-08,Client Services,93,17.1,4.6,8.9
+2024-08,Compliance,86,13.1,4.7,6.9
+2024-08,Operations,83,15.2,4.3,6.0
+2024-09,Underwriting,80,15.8,1.9,3.5
+2024-09,Closing,93,16.8,1.3,6.5
+2024-09,Client Services,92,17.8,1.2,4.0
+2024-09,Compliance,88,19.9,4.2,7.0
+2024-09,Operations,85,19.6,4.1,5.1
+2024-10,Underwriting,85,19.0,3.6,5.8
+2024-10,Closing,88,19.9,3.2,8.4
+2024-10,Client Services,91,16.6,1.5,7.5
+2024-10,Compliance,89,13.5,3.1,4.0
+2024-10,Operations,86,13.6,4.7,6.8
+2024-11,Underwriting,92,16.7,3.5,7.9
+2024-11,Closing,86,16.3,4.4,6.4
+2024-11,Client Services,87,17.6,2.6,5.0
+2024-11,Compliance,81,15.6,1.8,3.0
+2024-11,Operations,84,19.4,2.7,9.0
+2024-12,Underwriting,93,16.3,1.7,6.0
+2024-12,Closing,95,12.8,3.0,3.5
+2024-12,Client Services,85,14.3,1.4,5.4
+2024-12,Compliance,83,14.9,4.1,3.0
+2024-12,Operations,83,15.0,4.5,3.2

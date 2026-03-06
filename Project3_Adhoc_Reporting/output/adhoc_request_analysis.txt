@@ -1,0 +1,49 @@
+============================================================
+  AD-HOC REQUEST ANALYSIS
+  Period: 2024 | Total Requests: 200
+============================================================
+
+  BY BUSINESS UNIT:
+  Unit                  Total   Done  Avg Hrs  On-Time%
+  -------------------- ------ ------ -------- ---------
+  Client Services          34     31    55.5     91.2%
+  Closing                  35     31    60.6     88.6%
+  Compliance               32     31    62.4     96.9%
+  Operations               53     48    56.3     90.6%
+  Underwriting             46     40    64.3     87.0%
+
+  BY PRIORITY:
+  Priority    Total   Avg Turnaround Hrs
+  ---------- ------ --------------------
+  High           66                26.2
+  Medium         99                62.7
+  Low            35               118.8
+
+  MOST REQUESTED REPORT TYPES:
+    Trend Analysis              37 requests
+    Performance Summary         36 requests
+    Volume Tracker              35 requests
+    Custom Metric               33 requests
+    Exception Report            30 requests
+    Compliance Audit            29 requests
+
+  MONTHLY REQUEST VOLUME:
+    2024-01   21  ##########
+    2024-02   26  #############
+    2024-03   17  ########
+    2024-04    9  ####
+    2024-05   15  #######
+    2024-06   16  ########
+    2024-07   14  #######
+    2024-08   24  ############
+    2024-09   13  ######
+    2024-10   14  #######
+    2024-11   18  #########
+    2024-12   13  ######
+
+  RECOMMENDATIONS:
+  1. Most frequent request types should be automated as recurring reports.
+  2. High-priority requests averaging >24h turnaround need process review.
+  3. Consider self-service dashboards for top-requesting business units.
+
+============================================================

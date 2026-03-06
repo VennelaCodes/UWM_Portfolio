@@ -1,0 +1,9 @@
+Team,Region,Loans Processed,Loans Closed,Closure Rate %,Avg Turnaround Days,Escalations,CSAT Score,NPS Score,OEI Score,CES Score,Capacity %,Process Health
+Team_A,Midwest,532,231,43.4,31.2,68,3.94,53,11.0,60.6,83.5,50.5
+Team_B,West,553,202,36.5,29.2,55,4.02,34,10.4,45.4,82.1,50.0
+Team_C,Southeast,517,227,43.9,24.9,36,4.75,66,25.4,66.5,80.6,37.2
+Team_D,West,671,297,44.3,31.0,45,3.57,68,15.3,51.1,85.1,40.1
+Team_E,Northeast,628,248,39.5,29.1,43,4.66,22,16.7,48.2,85.5,43.5
+Team_F,Midwest,497,185,37.2,29.5,47,3.38,68,12.8,49.2,85.4,45.5
+Team_G,West,469,191,40.7,32.6,45,4.46,80,13.7,63.6,85.2,51.4
+Team_H,Southwest,597,245,41.0,33.3,46,4.3,54,12.7,54.2,81.7,43.4

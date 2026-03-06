@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vennela Reddy Singireddy | Data Analytics Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+
+        /* ---- HEADER / HERO ---- */
+        .hero {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 50%, #1a1a2e 100%);
+            border-bottom: 1px solid #334155;
+            padding: 60px 0 50px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #f8fafc;
+            margin-bottom: 8px;
+        }
+        .hero .subtitle {
+            font-size: 1.25rem;
+            color: #60a5fa;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        .hero .tagline {
+            font-size: 1rem;
+            color: #94a3b8;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+        .contact-bar {
+            margin-top: 24px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .contact-bar span {
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        /* ---- NAV ---- */
+        .nav {
+            background: #1e293b;
+            border-bottom: 1px solid #334155;
+            padding: 14px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+        .nav a {
+            color: #94a3b8;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+        .nav a:hover { color: #60a5fa; }
+
+        /* ---- CONTAINER ---- */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ---- SECTION ---- */
+        section {
+            padding: 60px 0;
+        }
+        section h2 {
+            font-size: 1.8rem;
+            color: #f8fafc;
+            margin-bottom: 8px;
+        }
+        .section-line {
+            width: 60px;
+            height: 3px;
+            background: #3b82f6;
+            margin-bottom: 30px;
+            border-radius: 2px;
+        }
+
+        /* ---- SKILLS GRID ---- */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .skill-card {
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 10px;
+            padding: 24px;
+            transition: border-color 0.2s;
+        }
+        .skill-card:hover { border-color: #3b82f6; }
+        .skill-card h3 {
+            color: #60a5fa;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+        .skill-card p {
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        /* ---- PROJECT CARDS ---- */
+        .project {
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 36px;
+            margin-bottom: 32px;
+            transition: border-color 0.3s, transform 0.2s;
+        }
+        .project:hover {
+            border-color: #3b82f6;
+            transform: translateY(-2px);
+        }
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        .project h3 {
+            font-size: 1.4rem;
+            color: #f8fafc;
+        }
+        .tech-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .tag {
+            background: #3b82f620;
+            color: #60a5fa;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            border: 1px solid #3b82f640;
+        }
+        .project-desc {
+            color: #cbd5e1;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+
+        /* Metrics row */
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        .metric {
+            background: #0f172a;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            padding: 16px;
+            text-align: center;
+        }
+        .metric .value {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #3b82f6;
+        }
+        .metric .label {
+            font-size: 0.8rem;
+            color: #94a3b8;
+            margin-top: 4px;
+        }
+
+        /* Highlights */
+        .highlights {
+            list-style: none;
+        }
+        .highlights li {
+            padding: 8px 0;
+            padding-left: 20px;
+            position: relative;
+            color: #cbd5e1;
+            font-size: 0.92rem;
+        }
+        .highlights li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 16px;
+            width: 8px;
+            height: 8px;
+            background: #3b82f6;
+            border-radius: 50%;
+        }
+
+        /* Collapsible output */
+        .output-toggle {
+            background: #3b82f615;
+            color: #60a5fa;
+            border: 1px solid #3b82f640;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-top: 16px;
+            transition: background 0.2s;
+        }
+        .output-toggle:hover { background: #3b82f630; }
+        .output-content {
+            display: none;
+            margin-top: 16px;
+            background: #0f172a;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            padding: 20px;
+            overflow-x: auto;
+        }
+        .output-content.active { display: block; }
+        .output-content pre {
+            color: #a5f3fc;
+            font-family: 'Courier New', monospace;
+            font-size: 0.82rem;
+            white-space: pre;
+            line-height: 1.5;
+        }
+
+        /* ---- KPI TABLE ---- */
+        .kpi-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 0.88rem;
+        }
+        .kpi-table th {
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 10px 14px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid #334155;
+        }
+        .kpi-table td {
+            padding: 10px 14px;
+            border-bottom: 1px solid #1e293b;
+            color: #cbd5e1;
+        }
+        .status-on { color: #34d399; font-weight: 600; }
+        .status-above { color: #f87171; font-weight: 600; }
+        .status-below { color: #fbbf24; font-weight: 600; }
+
+        /* ---- UWM MAPPING TABLE ---- */
+        .mapping-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+        .mapping-table th {
+            background: #1e293b;
+            color: #60a5fa;
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 2px solid #3b82f6;
+        }
+        .mapping-table td {
+            padding: 12px 16px;
+            border-bottom: 1px solid #334155;
+            color: #cbd5e1;
+        }
+        .mapping-table tr:hover { background: #1e293b80; }
+
+        /* ---- FOOTER ---- */
+        .footer {
+            background: #1e293b;
+            border-top: 1px solid #334155;
+            text-align: center;
+            padding: 30px;
+            color: #64748b;
+            font-size: 0.85rem;
+        }
+
+        /* ---- RESPONSIVE ---- */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .project { padding: 24px; }
+            .metrics { grid-template-columns: 1fr 1fr; }
+            .nav-inner { gap: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+    <div class="container">
+        <h1>Vennela Reddy Singireddy</h1>
+        <div class="subtitle">Client Experience Analyst | Data Analytics</div>
+        <p class="tagline">
+            Turning operational data into actionable insights through validated reporting,
+            KPI analysis, and automated workflows.
+        </p>
+    </div>
+</header>
+
+<!-- ===== NAV ===== -->
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="#skills">Skills</a>
+        <a href="#project1">KPI Analysis</a>
+        <a href="#project2">Data Governance</a>
+        <a href="#project3">Ad-hoc Reporting</a>
+        <a href="#mapping">UWM Alignment</a>
+    </div>
+</nav>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills">
+    <div class="container">
+        <h2>Core Skills</h2>
+        <div class="section-line"></div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Python</h3>
+                <p>Data validation pipelines, automated reporting, analytics scripts with structured OOP design</p>
+            </div>
+            <div class="skill-card">
+                <h3>SQL</h3>
+                <p>Complex queries, CTEs, window functions, multi-source joins, governance views</p>
+            </div>
+            <div class="skill-card">
+                <h3>Excel</h3>
+                <p>CSV-based reporting, pivot-ready outputs, KPI dashboards, data analysis</p>
+            </div>
+            <div class="skill-card">
+                <h3>Data Validation</h3>
+                <p>Automated quality checks, pre-submission validation, discrepancy detection</p>
+            </div>
+            <div class="skill-card">
+                <h3>KPI & Metrics Design</h3>
+                <p>Composite metrics, target tracking, trend analysis, executive summaries</p>
+            </div>
+            <div class="skill-card">
+                <h3>Process Automation</h3>
+                <p>Report generation workflows, reducing manual prep time by 25%+</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PROJECT 1 ===== -->
+<section id="project1">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="section-line"></div>
+
+        <div class="project">
+            <div class="project-header">
+                <h3>Project 1: Operational Data Review & KPI Analysis</h3>
+                <div class="tech-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">Excel</span>
+                </div>
+            </div>
+            <p class="project-desc">
+                End-to-end analysis pipeline processing 52,000+ operational records to ensure KPI alignment,
+                reporting accuracy, and executive-ready data delivery for mortgage/loan operations.
+            </p>
+
+            <div class="metrics">
+                <div class="metric">
+                    <div class="value">52,000+</div>
+                    <div class="label">Records Analyzed</div>
+                </div>
+                <div class="metric">
+                    <div class="value">95.1%</div>
+                    <div class="label">Data Quality Score</div>
+                </div>
+                <div class="metric">
+                    <div class="value">2,544</div>
+                    <div class="label">Errors Detected</div>
+                </div>
+                <div class="metric">
+                    <div class="value">6</div>
+                    <div class="label">Validation Rules</div>
+                </div>
+            </div>
+
+            <h4 style="color: #f8fafc; margin-bottom: 12px;">KPI Performance vs Targets</h4>
+            <table class="kpi-table">
+                <thead>
+                    <tr><th>KPI</th><th>Target</th><th>Actual</th><th>Gap</th><th>Status</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Average Processing Days</td><td>30.0</td><td>30.1</td><td>-0.1</td><td class="status-above">ABOVE TARGET</td></tr>
+                    <tr><td>Closure Rate</td><td>45.0%</td><td>45.2%</td><td>+0.2</td><td class="status-on">ON TRACK</td></tr>
+                    <tr><td>Client Satisfaction Score</td><td>4.0</td><td>3.0</td><td>-1.0</td><td class="status-below">BELOW TARGET</td></tr>
+                    <tr><td>Escalation Rate</td><td>10.0%</td><td>15.2%</td><td>-5.2</td><td class="status-above">ABOVE TARGET</td></tr>
+                    <tr><td>Denial Rate</td><td>12.0%</td><td>10.0%</td><td>+2.0</td><td class="status-on">ON TRACK</td></tr>
+                    <tr><td>Approval to Close Ratio</td><td>75.0%</td><td>74.7%</td><td>-0.3</td><td class="status-below">BELOW TARGET</td></tr>
+                </tbody>
+            </table>
+
+            <ul class="highlights">
+                <li>Built structured validation checks reducing reporting inconsistencies by 20%</li>
+                <li>Identified data gaps and process inefficiencies through record-level analysis</li>
+                <li>Delivered executive-ready data summaries for KPI performance reviews</li>
+                <li>Designed documentation workflows improving audit traceability</li>
+            </ul>
+
+            <button class="output-toggle" onclick="toggleOutput('output1')">View Executive Summary Output</button>
+            <div id="output1" class="output-content">
+                <pre>================================================================================
+    OPERATIONAL DATA REVIEW & KPI ANALYSIS - EXECUTIVE SUMMARY
+================================================================================
+
+1. DATA QUALITY OVERVIEW
+----------------------------------------
+   Total Records Analyzed:  52,000
+   Clean Records:           49,456
+   Data Quality Score:      95.11%
+   Errors Detected:         2,544
+
+2. KPI PERFORMANCE vs. TARGETS
+----------------------------------------
+   KPI                                Target   Actual      Gap          Status
+   --------------------------------- -------- -------- -------- ---------------
+   Average Processing Days               30.0     30.1     -0.1    ABOVE TARGET
+   Closure Rate                           45.0     45.2     +0.2        ON TRACK
+   Client Satisfaction Score               4.0      3.0     -1.0    BELOW TARGET
+   Escalation Rate                        10.0     15.2     -5.2    ABOVE TARGET
+   Denial Rate                            12.0     10.0     +2.0        ON TRACK
+   Approval to Close Ratio               75.0     74.7     -0.3    BELOW TARGET
+
+5. RECOMMENDATIONS
+----------------------------------------
+   - Average Processing Days: Currently 30.1 vs target 30.0. Recommend improvement plan.
+   - Client Satisfaction Score: Currently 3.0 vs target 4.0. Recommend improvement plan.
+   - Escalation Rate: Currently 15.2% vs target 10.0%. Recommend improvement plan.
+   - Investigate root cause of extended processing times (>45 days)</pre>
+            </div>
+        </div>
+
+        <!-- ===== PROJECT 2 ===== -->
+        <div class="project" id="project2">
+            <div class="project-header">
+                <h3>Project 2: Data Governance & Reporting Optimization</h3>
+                <div class="tech-tags">
+                    <span class="tag">SQL Server</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Excel</span>
+                </div>
+            </div>
+            <p class="project-desc">
+                Consolidated data from 3 different source systems into standardized dashboards,
+                designed 5 new composite metrics, and automated recurring reporting workflows.
+            </p>
+
+            <div class="metrics">
+                <div class="metric">
+                    <div class="value">3</div>
+                    <div class="label">Data Sources Consolidated</div>
+                </div>
+                <div class="metric">
+                    <div class="value">25%+</div>
+                    <div class="label">Reporting Time Reduced</div>
+                </div>
+                <div class="metric">
+                    <div class="value">5</div>
+                    <div class="label">New Metrics Designed</div>
+                </div>
+                <div class="metric">
+                    <div class="value">17</div>
+                    <div class="label">Discrepancies Found</div>
+                </div>
+            </div>
+
+            <h4 style="color: #f8fafc; margin-bottom: 12px;">New Composite Metrics Designed</h4>
+            <div class="skills-grid" style="margin-bottom: 20px;">
+                <div class="skill-card">
+                    <h3>Operational Efficiency Index</h3>
+                    <p>Combines closure rate, turnaround time, and rework into one actionable score</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Client Experience Score</h3>
+                    <p>Blends CSAT, NPS, and complaint rate for holistic client view</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Process Health Score</h3>
+                    <p>Tracks rework rates and system downtime impact</p>
+                </div>
+            </div>
+
+            <ul class="highlights">
+                <li>Consolidated multi-source datasets into standardized reporting dashboards</li>
+                <li>Drove 25% reduction in reporting prep time by automating recurring workflows</li>
+                <li>Conducted root cause analysis on discrepancies and recommended corrective improvements</li>
+                <li>Tested and validated reporting outputs for accuracy and stakeholder alignment</li>
+                <li>All 5 validation checks passed with zero failures</li>
+            </ul>
+
+            <button class="output-toggle" onclick="toggleOutput('output2')">View Discrepancy Report</button>
+            <div id="output2" class="output-content">
+                <pre>======================================================================
+  ROOT CAUSE ANALYSIS - DISCREPANCY REPORT
+======================================================================
+
+SATISFACTION_INCONSISTENCY (17 occurrences)
+--------------------------------------------------
+  [2024-01] Team_C: CSAT=4.58 but complaints=12 - possible survey sampling bias
+  [2024-01] Team_D: CSAT=4.73 but complaints=11 - possible survey sampling bias
+  [2024-01] Team_G: CSAT=4.59 but complaints=14 - possible survey sampling bias
+  [2024-02] Team_A: CSAT=4.33 but complaints=15 - possible survey sampling bias
+  [2024-03] Team_G: CSAT=4.05 but complaints=13 - possible survey sampling bias
+  [2024-06] Team_A: CSAT=4.76 but complaints=13 - possible survey sampling bias
+  [2024-07] Team_B: CSAT=4.12 but complaints=14 - possible survey sampling bias
+  ... and more
+
+RECOMMENDATIONS:
+--------------------------------------------------
+  1. Review survey sampling methodology for potential bias.
+  2. Cross-validate CSAT scores with complaint data.</pre>
+            </div>
+        </div>
+
+        <!-- ===== PROJECT 3 ===== -->
+        <div class="project" id="project3">
+            <div class="project-header">
+                <h3>Project 3: Ad-hoc Reporting & Process Efficiency</h3>
+                <div class="tech-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Excel</span>
+                </div>
+            </div>
+            <p class="project-desc">
+                Built a complete ad-hoc reporting system handling 200 requests across 5 business units
+                with structured daily/weekly/monthly reports and pre-submission validation.
+            </p>
+
+            <div class="metrics">
+                <div class="metric">
+                    <div class="value">200</div>
+                    <div class="label">Ad-hoc Requests Handled</div>
+                </div>
+                <div class="metric">
+                    <div class="value">5</div>
+                    <div class="label">Business Units Served</div>
+                </div>
+                <div class="metric">
+                    <div class="value">100%</div>
+                    <div class="label">Validation Pass Rate</div>
+                </div>
+                <div class="metric">
+                    <div class="value">3</div>
+                    <div class="label">Report Frequencies</div>
+                </div>
+            </div>
+
+            <h4 style="color: #f8fafc; margin-bottom: 12px;">Request Analysis by Business Unit</h4>
+            <table class="kpi-table">
+                <thead>
+                    <tr><th>Business Unit</th><th>Total</th><th>Completed</th><th>Avg Hours</th><th>On-Time %</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Client Services</td><td>34</td><td>31</td><td>55.5</td><td class="status-on">91.2%</td></tr>
+                    <tr><td>Closing</td><td>35</td><td>31</td><td>60.6</td><td class="status-below">88.6%</td></tr>
+                    <tr><td>Compliance</td><td>32</td><td>31</td><td>62.4</td><td class="status-on">96.9%</td></tr>
+                    <tr><td>Operations</td><td>53</td><td>48</td><td>56.3</td><td class="status-on">90.6%</td></tr>
+                    <tr><td>Underwriting</td><td>46</td><td>40</td><td>64.3</td><td class="status-below">87.0%</td></tr>
+                </tbody>
+            </table>
+
+            <ul class="highlights">
+                <li>Delivered high-priority ad-hoc reporting requests under tight deadlines (avg 26.2 hrs)</li>
+                <li>Built structured summary reports for daily, weekly, and monthly performance tracking</li>
+                <li>Implemented pre-submission validation scripts minimizing downstream reporting errors</li>
+                <li>Analyzed request patterns to identify automation opportunities</li>
+            </ul>
+
+            <button class="output-toggle" onclick="toggleOutput('output3')">View Request Analysis</button>
+            <div id="output3" class="output-content">
+                <pre>============================================================
+  AD-HOC REQUEST ANALYSIS
+  Period: 2024 | Total Requests: 200
+============================================================
+
+  BY PRIORITY:
+  Priority    Total   Avg Turnaround Hrs
+  ---------- ------ --------------------
+  High           66                26.2
+  Medium         99                62.7
+  Low            35               118.8
+
+  MOST REQUESTED REPORT TYPES:
+    Trend Analysis              37 requests
+    Performance Summary         36 requests
+    Volume Tracker              35 requests
+    Custom Metric               33 requests
+    Exception Report            30 requests
+    Compliance Audit            29 requests
+
+  MONTHLY REQUEST VOLUME:
+    2024-01   21  ##########
+    2024-02   26  #############
+    2024-03   17  ########
+    2024-04    9  ####
+    2024-05   15  #######
+    2024-06   16  ########
+    2024-07   14  #######
+    2024-08   24  ############
+    2024-09   13  ######
+    2024-10   14  #######
+    2024-11   18  #########
+    2024-12   13  ######
+
+  RECOMMENDATIONS:
+  1. Most frequent request types should be automated as recurring reports.
+  2. High-priority requests averaging >24h turnaround need process review.
+  3. Consider self-service dashboards for top-requesting business units.</pre>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== UWM MAPPING ===== -->
+<section id="mapping" style="background: #1e293b15;">
+    <div class="container">
+        <h2>Alignment with UWM Requirements</h2>
+        <div class="section-line"></div>
+        <table class="mapping-table">
+            <thead>
+                <tr><th>UWM Requirement</th><th>Portfolio Evidence</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Analyzing data to influence decision making</td>
+                    <td>Project 1: KPI vs target analysis with executive recommendations</td>
+                </tr>
+                <tr>
+                    <td>Reporting trends daily/weekly/monthly</td>
+                    <td>Project 3: Structured reports at all 3 frequencies across 5 business units</td>
+                </tr>
+                <tr>
+                    <td>Ad-hoc reporting requests</td>
+                    <td>Project 3: 200 request tracking system with priority-based handling</td>
+                </tr>
+                <tr>
+                    <td>Finding efficiencies to improve processes</td>
+                    <td>Project 2: 25%+ reduction in reporting preparation time</td>
+                </tr>
+                <tr>
+                    <td>Testing reporting and processes</td>
+                    <td>Project 2: Automated validation suite | Project 3: Pre-submission checks</td>
+                </tr>
+                <tr>
+                    <td>Building new metrics and reporting</td>
+                    <td>Project 2: 5 new composite metrics with full documentation</td>
+                </tr>
+                <tr>
+                    <td>Strong Python skills</td>
+                    <td>All 3 projects built in Python with clean, object-oriented design</td>
+                </tr>
+                <tr>
+                    <td>Strong Excel skills</td>
+                    <td>All projects generate CSV outputs designed for Excel analysis and pivoting</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <p>Vennela Reddy Singireddy | Data Analytics Portfolio</p>
+</footer>
+
+<script>
+    function toggleOutput(id) {
+        const el = document.getElementById(id);
+        el.classList.toggle('active');
+    }
+
+    // Smooth scroll for nav links
+    document.querySelectorAll('.nav a').forEach(a => {
+        a.addEventListener('click', e => {
+            e.preventDefault();
+            const target = document.querySelector(a.getAttribute('href'));
+            if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+    });
+</script>
+
+</body>
+</html>

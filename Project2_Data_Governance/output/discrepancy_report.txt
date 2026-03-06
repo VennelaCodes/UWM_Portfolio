@@ -1,0 +1,26 @@
+======================================================================
+  ROOT CAUSE ANALYSIS - DISCREPANCY REPORT
+  Generated: 2026-03-05 17:04:40
+======================================================================
+
+
+SATISFACTION_INCONSISTENCY (17 occurrences)
+--------------------------------------------------
+  [2024-01] Team_C: CSAT=4.58 but complaints=12 - possible survey sampling bias
+  [2024-01] Team_D: CSAT=4.73 but complaints=11 - possible survey sampling bias
+  [2024-01] Team_G: CSAT=4.59 but complaints=14 - possible survey sampling bias
+  [2024-02] Team_A: CSAT=4.33 but complaints=15 - possible survey sampling bias
+  [2024-03] Team_G: CSAT=4.05 but complaints=13 - possible survey sampling bias
+  [2024-04] Team_G: CSAT=4.46 but complaints=14 - possible survey sampling bias
+  [2024-06] Team_A: CSAT=4.76 but complaints=13 - possible survey sampling bias
+  [2024-06] Team_G: CSAT=4.44 but complaints=12 - possible survey sampling bias
+  [2024-07] Team_B: CSAT=4.12 but complaints=14 - possible survey sampling bias
+  [2024-07] Team_H: CSAT=4.49 but complaints=11 - possible survey sampling bias
+  ... and 7 more
+
+
+RECOMMENDATIONS:
+--------------------------------------------------
+2. Review survey sampling methodology for potential bias.
+   Action: Cross-validate CSAT scores with complaint data.
+

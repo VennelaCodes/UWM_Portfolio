@@ -1,0 +1,57 @@
+======================================================================
+  MONTHLY PERFORMANCE REPORT - 2024-12
+  Generated: 2026-03-05 17:04:41
+======================================================================
+
+
+  UNDERWRITING
+  ----------------------------------------
+  Working Days:        21
+  Loans Completed:     1,078
+  Avg Daily Pipeline:  162
+  Avg Cycle Time:      18.9 days (target: 16.3, OVER)
+  Error Rate:          7.7% (target: 1.7%, HIGH)
+  Overtime Hours:      289.3
+  Daily Productivity:  51.3 loans/day
+
+  CLOSING
+  ----------------------------------------
+  Working Days:        21
+  Loans Completed:     757
+  Avg Daily Pipeline:  160
+  Avg Cycle Time:      21.2 days (target: 12.8, OVER)
+  Error Rate:          11.23% (target: 3.0%, HIGH)
+  Overtime Hours:      215.4
+  Daily Productivity:  36.0 loans/day
+
+  CLIENT SERVICES
+  ----------------------------------------
+  Working Days:        21
+  Loans Completed:     1,069
+  Avg Daily Pipeline:  170
+  Avg Cycle Time:      20.9 days (target: 14.3, OVER)
+  Error Rate:          7.67% (target: 1.4%, HIGH)
+  Overtime Hours:      232.3
+  Daily Productivity:  50.9 loans/day
+
+  COMPLIANCE
+  ----------------------------------------
+  Working Days:        21
+  Loans Completed:     899
+  Avg Daily Pipeline:  203
+  Avg Cycle Time:      19.5 days (target: 14.9, OVER)
+  Error Rate:          10.12% (target: 4.1%, HIGH)
+  Overtime Hours:      157.3
+  Daily Productivity:  42.8 loans/day
+
+  OPERATIONS
+  ----------------------------------------
+  Working Days:        21
+  Loans Completed:     881
+  Avg Daily Pipeline:  168
+  Avg Cycle Time:      18.1 days (target: 15.0, OVER)
+  Error Rate:          11.01% (target: 4.5%, HIGH)
+  Overtime Hours:      188.5
+  Daily Productivity:  42.0 loans/day
+
+======================================================================
